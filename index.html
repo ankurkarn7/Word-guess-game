@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Word Guess Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Setup Screen -->
+  <div id="setup">
+    <h1>Word Guess Game</h1>
+    <div class="setup-section">
+      <h3>Choose Word Length</h3>
+      <button class="option-btn word-length-btn" data-value="4" onclick="setWordLength(4)">4 Letters</button>
+      <button class="option-btn word-length-btn" data-value="5" onclick="setWordLength(5)">5 Letters</button>
+      <button class="option-btn word-length-btn" data-value="6" onclick="setWordLength(6)">6 Letters</button>
+    </div>
+    <div class="setup-section">
+      <h3>Choose Number of Tries</h3>
+      <button class="option-btn tries-btn" data-value="7" onclick="setTries(7)">7 Tries</button>
+      <button class="option-btn tries-btn" data-value="8" onclick="setTries(8)">8 Tries</button>
+    </div>
+    <div class="setup-section">
+      <h3>Choose Word Mode</h3>
+      <button class="option-btn mode-btn" data-value="random" onclick="setWordMode('random')">Random Word</button>
+      <button class="option-btn mode-btn" data-value="custom" onclick="setWordMode('custom')">Fill Word</button>
+      <!-- This input field appears only when Fill Word is selected -->
+      <div id="customWordDiv" style="display: none; margin-top: 10px;">
+        <input type="text" id="manualWordInput" placeholder="Enter word here" maxlength="10" />
+      </div>
+    </div>
+    <button id="startBtn" onclick="startGame()" disabled>Start Game</button>
+  </div>
+
+  <!-- Game Screen -->
+  <div id="game" style="display: none;">
+    <h1>Guess the Word</h1>
+    <p id="wordDisplay">_____</p>
+    <p id="wrongLetters">Wrong Letters: </p>
+    <p id="triesLeft">Tries Left: </p>
+    <div id="keyboard"></div>
+    <p id="resultMessage"></p>
+    <button id="playAgainBtn" onclick="restartGame()" style="display: none;">Play Again</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

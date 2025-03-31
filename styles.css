@@ -1,0 +1,151 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  /* Setup Screen */
+  .setup-section {
+    margin: 20px 0;
+  }
+  
+  .option-btn {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  .option-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .option-btn.faded {
+    background-color: #ccc !important;
+    color: #666;
+  }
+  
+  .option-btn.selected {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  /* Start Button */
+  #startBtn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #aaa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed;
+    transition: background-color 0.3s;
+  }
+  
+  #startBtn.enabled {
+    background-color: #28a745;
+    cursor: pointer;
+  }
+  
+  /* Custom Word Input */
+  #customWordDiv input {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+  }
+  
+  /* Game Screen */
+  #game {
+    margin-top: 20px;
+  }
+  
+  #wordDisplay {
+    font-size: 32px;
+    letter-spacing: 8px;
+    margin: 20px 0;
+  }
+  
+  #wrongLetters, #triesLeft {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  /* QWERTY Keyboard */
+  #keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .keyboard-row {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+  }
+  
+  #keyboard button {
+    margin: 3px;
+    padding: 12px;
+    font-size: 18px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  #keyboard button:hover {
+    background-color: #0056b3;
+  }
+  
+  #keyboard button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Result & Play Again */
+  #resultMessage {
+    font-size: 22px;
+    margin: 20px 0;
+  }
+  
+  #playAgainBtn {
+    display: block;
+    margin: 20px auto; /* Center the Play Again button */
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .option-btn, #startBtn, #playAgainBtn {
+      width: 80%;
+      font-size: 16px;
+    }
+    #keyboard button {
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+    }
+  }
+  
