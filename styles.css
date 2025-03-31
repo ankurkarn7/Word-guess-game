@@ -140,12 +140,12 @@ body {
   @media (max-width: 1440px) {
     .option-btn, #startBtn, #playAgainBtn {
       width: 95%;
-      font-size: 30px;
+      font-size: 50px;
     }
     #keyboard button {
-      width: 60px;
-      height: 60px;
-      font-size: 30px;
+      width: 75px;
+      height: 75px;
+      font-size: 50px;
     }
   }
   
