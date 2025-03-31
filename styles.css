@@ -137,10 +137,10 @@ body {
   }
   
   /* Responsive Styles */
-  @media (max-width: 800px) {
+  @media (max-width: 1440px) {
     .option-btn, #startBtn, #playAgainBtn {
-      width: 80%;
-      font-size: 25px;
+      width: 95%;
+      font-size: 30px;
     }
     #keyboard button {
       width: 60px;
